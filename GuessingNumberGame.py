@@ -25,6 +25,18 @@ while(GameON):
                 print("It took you " + str(Count) + " tries!\n")
         
     elif((UserChoice == "n") or (UserChoice == "N")):
-        print("System...Shutting Down")
-        time.sleep(3)
         GameON = False
+
+print("System...Shutting Down")
+time.sleep(2)
+print(3)
+time.sleep(1)
+print(2)
+time.sleep(1)
+print(1)
+time.sleep(1)
+print("Shut Down Is Complete")
+time.sleep(3)
+
+os.system('clear')
+
