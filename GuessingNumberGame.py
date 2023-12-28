@@ -7,7 +7,7 @@ GameON = True
 while(GameON):
     print("WELCOME TO THE GUESSING NUMBER GAME!")
     print("************************************")
-    print("Do you want to play?")
+    print("Do you want to play? (Y/N)")
     UserChoice = str(input())
     
     if((UserChoice == "y") or (UserChoice == "Y")):
@@ -26,6 +26,10 @@ while(GameON):
         
     elif((UserChoice == "n") or (UserChoice == "N")):
         GameON = False
+
+    elif(((UserChoice != "y") or (UserChoice != "Y")) and ((UserChoice != "n") or (UserChoice != "N"))):
+        print("Invalid...Please input Y/N")
+        time.sleep(2)
 
 print("System...Shutting Down")
 time.sleep(2)
